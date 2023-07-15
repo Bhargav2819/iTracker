@@ -1,0 +1,38 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+.form-outline {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2;
+  }
+  
+  .password-toggle-icon i {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .password-toggle-icon.active i {
+    color: #333;
+  }
+  
