@@ -1,4 +1,17 @@
 .logoName{
     font-size: large;
-    
 }
+/* CSS for the button animation */
+.btn-light {
+    /* background-color: #007bff; */
+    color: #ffffff;
+    border: none; 
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .btn-light:hover {
+    /* background-color: #0056b3; */
+    transform: scale(1.1);
+  }
+  
+  

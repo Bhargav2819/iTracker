@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,8 @@ export class LoginComponent {
   emailInvalid: boolean = true;
   passwordInvalid: boolean = true;
   showPassword: boolean = false;
+
+  constructor(private router : Router){}
 
   login() {
     // Reset error flags
@@ -41,6 +44,10 @@ export class LoginComponent {
   
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
+  }
+
+  rediectToLogin(){
+    this.router.navigateByUrl('/auth/register');
   }
   
 }
